@@ -1,0 +1,17 @@
+node_modules/
+out/
+dist/
+build/
+.env
+.DS_Store
+.idea/
+.vscode/
+*.log
+package-lock.json
+yarn.locknode_modules
+dist
+out
+.DS_Store
+.eslintcache
+*.log*
+/Smart_notes
