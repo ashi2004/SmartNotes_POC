@@ -30,16 +30,40 @@ Smart Notes wraps your plain `.md` files with semantic search, an RAG pipeline, 
 
 **Browser Extension** - companion Chrome extension clips selected web text into your Inbox note via `Alt+S`, summarises pages, and surfaces related notes from your knowledge base.
 
+## Demo Implementation
+
+Electron App
+
+
+https://github.com/user-attachments/assets/9cca2cd1-613e-495e-9b60-2b1cba21bfc9
+
+
+
+SmartNotes Extension
+
+
+
+https://github.com/user-attachments/assets/c4ab8456-96b6-4de7-b2df-7445173b27b1
+
+
+
+Landing Page
+
+https://smart-notes-lac-eta.vercel.app/
+
+<img width="1892" height="1034" alt="image" src="https://github.com/user-attachments/assets/afd88744-e35c-4f4f-92d7-595a440caa85" />
+
+
 ## Tech Stack
 
-- **Electron + electron-vite** — main/renderer process split, typed IPC bridge via Zod
-- **React + TypeScript** — renderer UI, strict mode
-- **TipTap** — ProseMirror-based extensible editor
-- **SQLite** (`better-sqlite3`) — WAL mode, FTS5 keyword index, chunk + embedding storage, graph edges
-- **Transformers.js** — local embedding inference in a Node.js worker thread
-- **Ollama** — local LLM inference, auto-detected on startup
-- **D3.js** — force-directed knowledge graph visualization
-- **chokidar** — filesystem watcher for live incremental re-indexing
+- **Electron + electron-vite**-   main/renderer process split, typed IPC bridge via Zod
+- **React + TypeScript** -renderer UI, strict mode
+- **TipTap** - ProseMirror-based extensible editor
+- **SQLite** (`better-sqlite3`) - WAL mode, FTS5 keyword index, chunk + embedding storage, graph edges
+- **Transformers.js** - local embedding inference in a Node.js worker thread
+- **Ollama** - local LLM inference, auto-detected on startup
+- **D3.js** - force-directed knowledge graph visualization
+- **chokidar** - filesystem watcher for live incremental re-indexing
 
 ## Run Locally
 ```bash
